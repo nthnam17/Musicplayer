@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player: Chill And Free</title>
+        <link rel="icon" type="image/png" href="./assets/img/logo/logomini.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/modal.css">
+        <link rel="stylesheet" href="./assets/css/spacechill.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="wraper">
+                <div class="background">
+                    <img src="./assets/img/blur/qnt_refundband.jpg" alt="" class="background__img"> </img>
+                    <div class="overlay"></div>
+                    <!-- style="background-image: url('./assets/img/blur/qnt_refundband.jpg');" -->
+                </div>
+                <div class="container">
+                    <header>
+                        <div class="spaces__header">
+                            <div class="spaces__header-left">
+                                <img src="./assets/img/logo/logongang.png" alt="" class="spaces__header-logo">
+                            </div>
+                            <div class="spaces__header-center">
+                                <div class="spaces__header-select">
+                                    <p class="header__select-item active">List Spaces</p>
+                                    <p class="header__select-item">Spaces Chill</p>
+                                    <p class="header__select-item">Spaces Lyrics</p>
+                                </div>
+                            </div>
+                            <div class="spaces__header-right">
+                                <a href="./index.html" class="header__right-link">
+                                    <i class="fa-solid fa-house header__right-icon"></i>
+                                </a>
+                                <a href="" class="header__right-link">
+                                    <i class="fa-solid fa-gear header__right-icon"></i>
+                                </a>
+                                <a href="./user.html" class="header__right-link mr-18">
+                                    <img src="./assets/img/user/isme.jpg" alt="" class="header__right-img">
+                                </a>
+                            </div>
+                        </div>       
+                    </header>
+                    <div class="grid">
+                        <div class="spaces__content">
+                            <div class="grid ">
+                                <div class="space__content-wraper">
+                                    
+                                    <div class="spaces__left">
+                                        <div class="header__mbl">
+                                            <div class="header__mbl-left">
+                                                <i class="fa-solid fa-chevron-left header__mbl-icon"></i>
+                                            </div>
+                                            <div class="header__mbl-center">
+                                                <h3 class="header__mbl-name">Quan Tài Hự</h3>
+                                                <p class="header__mbl-artist">Đấng23232</p>
+                                            </div>
+                                            <div class="header__mbl-right">
+                                                <i class="fa-solid fa-stopwatch header__mbl-icon"></i>
+                                                <i class="fa-solid fa-bars header__mbl-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cdthumb">
+                                            <div class="cd">
+                                                <div id="cdthumb" class="cdthumb__img"></div>
+                                            </div>
+                                            <div class="cdthumb__content">
+                                                <h2 class="cdthumb__name">QNT</h2>
+                                                <p class="cdthumb__artist">QNT,RefundBand,MCK,TrungTran</p>
+                                                <div class="cdthumb__btn-wraper">
+                                                    <buttom class="cdthumb__btn">Phát Nghẫu Nhiên</buttom>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="spaces__right">
+                                        <div id="QNT" class="spaces__song">
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player">
+                        <div class="player__content">
+                            <div class="time">
+                                <span id="curtime" class="time__left">00:00</span>
+                                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                                <span id="durtime" class="time__left">00:00</span>   
+                            </div>
+                            <div class="actions">
+                                <div class="actions__shuffle btn-random">
+                                    <i class="fa-solid fa-shuffle  actions__icon icon___size-s random__icon"></i>
+                                </div>
+                                <div class="actions__pre btn-prev">
+                                    <i class="fa-solid fa-backward-step  actions__icon icon___size-l"></i>
+                                </div>
+                                <div class="actions__play ">
+                                    <i class="fa-regular fa-circle-play actions__btn icon___size-xl icon-play"></i>
+                                    <i class="fa-regular fa-circle-pause actions__btn icon___size-xl icon-pause"></i>
+                                </div>
+                                <div class="actions__next btn-next">
+                                    <i class="fa-solid fa-forward-step  actions__icon icon___size-l"></i>
+                                </div>
+                                <div class="actions__repeat  btn-repeat">
+                                    <i class="fa-sharp fa-solid fa-rotate-right actions__icon icon___size-s repeat__icon"></i>
+                                </div>
+                            </div>
+                            <audio id="audio" src=""></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        
+
+
+        <script src="./assets/js/QNT.js"></script>
+    </body>
+    
+</html>

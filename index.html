@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player: Chill And Free</title>
+        <link rel="icon" type="image/png" href="./assets/img/logo/logomini.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="sidebar">
+                <img src="./assets/img/logo/logongang.png" alt="" class="sidebar__logo">
+                <ul class="sidebar__list">
+                    <li class="sidebar__items "><a href="./user.html" class="sidebar__link">
+                        <i class="fa-sharp fa-solid fa-music sidebar__icon"></i>
+                        <p class="sidebar__name">Cá Nhân</p>
+                    </a></li>
+                    <li class="sidebar__items active"><a href="./index.html" class="sidebar__link">
+                        <i class="fa-solid fa-record-vinyl"></i>
+                        <p class="sidebar__name">Khám Phá</p>
+                    </a></li>
+                    <li class="sidebar__items"><a href="" class="sidebar__link">
+                        <i class="fa-sharp fa-solid fa-ranking-star"></i>
+                        <p class="sidebar__name">BXH</p>
+                    </a></li>
+                    <li class="sidebar__items"><a href="" class="sidebar__link">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <p class="sidebar__name"> Nhạc Mới</p>
+                    </a></li>
+                    <li class="sidebar__items"><a href="" class="sidebar__link">
+                        <i class="fa-solid fa-icons"></i>
+                        <p class="sidebar__name"> Thể Loại</p>
+                    </a></li>
+                    <li class="sidebar__items lineafter"><a href="" class="sidebar__link">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="sidebar__name"> Top Hits</p>
+                    </a></li>
+                </ul>
+                <div class="space">
+                    <div class="space__header">
+                        <h3 class="space__heading">Space Chill</h3>
+                    </div>
+                    <ul class="space__list">
+                        <li class="space__item item__primary item--qnt"><a href="./spacechill.html" class="space__link">QNT</a></li>
+                        <li class="space__item item__primary item--tns"><a href="" class="space__link">Taynguyensound</a></li>
+                        <li class="space__item item__primary item--thichthich"><a href="" class="space__link">
+                            Thich
+                        </a></li>
+                        <li class="space__item btn__center intheline"><a href="" class="space__link no__padding btn__primary">
+                            <i class="fa-sharp fa-solid fa-plus space__icon"></i>
+                            Thêm Mới
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container" class="container">
+                <div class="grid">
+                    <div class="header__with-search">
+                        <div class="header__search">
+                            <div class="header__search-left">
+                                <div class="header__pagination">
+                                    <div class="header__pagination-item">
+                                        <i class="header__pagination-icon fa-sharp fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="header__pagination-item">
+                                        <i class="header__pagination-icon fa-sharp fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="header__search-input--wrap">
+                                    <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                                    <!-- <div class="header__search-history">
+                                        <p class="header__history-heading">Lịch Sử Tìm Kiếm</p>
+                                        <ul class="header__history-list">
+                                            <li class="header__history-item"><a href=""></a>Asus TUF 15</li>
+                                            <li class="header__history-item"><a href=""></a>Acer Nitro 5</li>
+                                        </ul>
+                                    </div> -->
+                                    <button class="header__search-btn">
+                                        <i class="header__search-btn-icon fas fa-search"></i>
+                                    </button>
+                                </div>
+                                    
+                            </div>
+                            <div class="header__search-right">
+                                <ul class="header__search-list">
+                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                        <i class="fa-solid fa-shirt header__search-icon"></i>
+                                    </a></li>
+                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                        <i class="fa-sharp fa-solid fa-plus header__search-icon"></i>
+                                    </a></li>
+                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                        <i class="fa-solid fa-gear header__search-icon"></i>
+                                    </a></li>
+                                    <a href="" class="header__search-user">
+                                        <img src="./assets/img/user/isme.jpg" alt="" class="header__search-img">
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__list">
+                            <div class="grid__column-3-12">
+                                <div class="slider__items">
+                                    <a href="" class="slider__link">
+                                        <img src="./assets/img/banner/1.jpg" alt="" class="slider__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-3-12">
+                                <div class="slider__items">
+                                    <a href="" class="slider__link">
+                                        <img src="./assets/img/banner/Pink-Venom.jpg" alt="" class="slider__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-3-12">
+                                <div class="slider__items">
+                                    <a href="" class="slider__link">
+                                        <img src="./assets/img/banner/thich-thich.jpeg" alt="" class="slider__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__pagination">
+                            <div class="slider__pagination-left">
+                                <i class="fa-solid fa-chevron-left slider__pagination-icon"></i>
+                            </div>
+                            <div class="slider__pagination-right">
+                                <i class="fa-solid fa-chevron-right slider__pagination-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsing">
+                        <div class="newsing__header">
+                            <h2 class="newsing__heading">Mới Phát Hành</h2>
+                            <div class="newsing__select">
+                                <span class="newsing__sel">Bài Hát</span>
+                                <span class="newsing__all">Tất Cả</span>
+                            </div>
+                        </div>
+                            <div id="listNewsing" class="grid__row newsing__container">
+                                
+                            </div>  
+                    </div>
+                    <div class="artist">
+                        <div class="artist__header">
+                            <h2 class="artist__heading">Nghệ Sĩ</h2>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid__column-5-12">
+                                <div class="artist__wraper">
+                                    <a href="" class="artist__card">
+                                        <div class="artist__card-bg">
+                                                <img src="./assets/img/thumb/artist/phuongly.jpg" alt="" class="artist__card-img">
+                                        </div>
+                                        <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(17, 37, 57));"></div>
+                                        <div class="artist__content">
+                                             <h3 class="artist__content-name">Phương Ly</h3>
+                                             <ul class="artist__content-list">
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/nhoanh.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/thichthich.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/anhlaai.jpg" alt="" class="artist__content-img"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="artist__wraper">
+                                    <a href="" class="artist__card">
+                                        <div class="artist__card-bg">
+                                                <img src="./assets/img/thumb/artist/den.jpg" alt="" class="artist__card-img">
+                                        </div>
+                                        <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(17, 37, 57));"></div>
+                                        <div class="artist__content">
+                                             <h3 class="artist__content-name">Đen Vâu</h3>
+                                             <ul class="artist__content-list">
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/coaimuonnghekhong.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/loinho.jfif" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/trontim.jpg" alt="" class="artist__content-img"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="artist__wraper">
+                                    <a href="" class="artist__card">
+                                        <div class="artist__card-bg">
+                                                <img src="./assets/img/thumb/artist/mrsiro.jpg" alt="" class="artist__card-img">
+                                        </div>
+                                        <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(17, 37, 57));"></div>
+                                        <div class="artist__content">
+                                             <h3 class="artist__content-name">Mr. siro</h3>
+                                             <ul class="artist__content-list">
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/msguongmatlalam.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/mskhoccungem.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/msmbyvđ.jpg" alt="" class="artist__content-img"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="artist__wraper">
+                                    <a href="" class="artist__card">
+                                        <div class="artist__card-bg">
+                                                <img src="./assets/img/thumb/artist/hoaminzy.jpg" alt="" class="artist__card-img">
+                                        </div>
+                                        <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(17, 37, 57));"></div>
+                                        <div class="artist__content">
+                                             <h3 class="artist__content-name">Hòa Minzy</h3>
+                                             <ul class="artist__content-list">
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/ktcnsk2.jfif" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/roibo.jfif" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/ndste.jpg" alt="" class="artist__content-img"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="artist__wraper">
+                                    <a href="" class="artist__card">
+                                        <div class="artist__card-bg">
+                                                <img src="./assets/img/thumb/artist/Jayte.jpg" alt="" class="artist__card-img">
+                                        </div>
+                                        <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(17, 37, 57));"></div>
+                                        <div class="artist__content">
+                                             <h3 class="artist__content-name">Hòa Minzy</h3>
+                                             <ul class="artist__content-list">
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/daloyeuemn.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/thngdien.jpg" alt="" class="artist__content-img"></li>
+                                                    <li class="artist__content-items"><img src="./assets/img/thumb/sing/thichthich.jpg" alt="" class="artist__content-img"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="top100__header">
+                            <h2 class="top100__heading">Thể Loại</h2>
+                            <div class="top100__select">
+                                <span class="top100__all">Tất Cả</span>
+                            </div>
+                        </div>
+                        <div class="grid grid__row">
+                            <div class="grid__column-4-12">
+                                <a href="" class="type__card">
+                                    <div class="artist__card-bg">
+                                        <img src="./assets/img/thumb/theloai/indie.jpg" alt="" class="artist__card-img type__card-img">
+                                    </div>
+                                    <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(7 32 57));"></div>
+                                    <div class="artist__content type__content">
+                                        <h3 class="artist__content-name type__name">Indie</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-4-12">
+                                <a href="" class="type__card">
+                                    <div class="artist__card-bg">
+                                        <img src="./assets/img/thumb/theloai/rap.jpg" alt="" class="artist__card-img type__card-img">
+                                    </div>
+                                    <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(7 32 57));"></div>
+                                    <div class="artist__content type__content">
+                                        <h3 class="artist__content-name type__name">Rap</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-4-12">
+                                <a href="" class="type__card">
+                                    <div class="artist__card-bg">
+                                        <img src="./assets/img/thumb/theloai/remix.jpg" alt="" class="artist__card-img type__card-img">
+                                    </div>
+                                    <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(7 32 57));"></div>
+                                    <div class="artist__content type__content">
+                                        <h3 class="artist__content-name type__name">Remix</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-4-12">
+                                <a href="" class="type__card">
+                                    <div class="artist__card-bg">
+                                        <img src="./assets/img/thumb/theloai/ballad.jpg" alt="" class="artist__card-img type__card-img">
+                                    </div>
+                                    <div class="blur-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(7 32 57));"></div>
+                                    <div class="artist__content type__content">
+                                        <h3 class="artist__content-name type__name">Ballad</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top100">
+                        <div class="top100__header">
+                            <h2 class="top100__heading">TOP 100</h2>
+                            <div class="top100__select">
+                                <span class="top100__all">Tất Cả</span>
+                            </div>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid__column-5-12">
+                                <div class="top100__wraper">
+                                    <a href="" class="top100__card">
+                                        <img src="./assets/img/thumb/top100/topnhactre.jpg" alt="" class="top100__img">
+                                        <div class="top100__content">
+                                            <h3 class="top100__name">Top 100 Nhạc Trẻ Hay Nhất Luôn</h3>
+                                            <p class="top100__title">Mr.siro,Jack-J97,Đình Dũng,Quân A.P,Khắc Việt,Phan Mạnh Quỳnh</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="top100__wraper">
+                                    <a href="" class="top100__card">
+                                        <img src="./assets/img/thumb/top100/topkpop.jpg" alt="" class="top100__img">
+                                        <div class="top100__content">
+                                            <h3 class="top100__name">Top 100 Nhạc KPOP</h3>
+                                            <p class="top100__title">TAENEYe,BLACK PINK,BIG BANG,SNSD</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="top100__wraper">
+                                    <a href="" class="top100__card">
+                                        <img src="./assets/img/thumb/top100/topusuk.jpg" alt="" class="top100__img">
+                                        <div class="top100__content">
+                                            <h3 class="top100__name">Top 100 Nhạc Âu Mỹ</h3>
+                                            <p class="top100__title">Maroon 5, Taylor Swith, LenKa, Eminem</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="top100__wraper">
+                                    <a href="" class="top100__card">
+                                        <img src="./assets/img/thumb/top100/hoangu.jpg" alt="" class="top100__img">
+                                        <div class="top100__content">
+                                            <h3 class="top100__name">Top 100 Nhạc Hoa Ngữ</h3>
+                                            <p class="top100__title">Châu Thâm,Hoa Thần Vũ,ALin, SAD</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-5-12">
+                                <div class="top100__wraper">
+                                    <a href="" class="top100__card">
+                                        <img src="./assets/img/thumb/top100/toptrutinh.jpg" alt="" class="top100__img">
+                                        <div class="top100__content">
+                                            <h3 class="top100__name">Top 100 Nhạc Trữ Tình</h3>
+                                            <p class="top100__title">Đan Trường,Cẩm Ly,Tuấn Ngọc, SAD</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+            <div class="playerbar">
+                <div class="grid__full">
+                    <div class="playerbar__left">
+                        <div class="media">
+                            <div class="media__primary">
+                                <div class="media__left">
+                                    <div class="media__left-img" id="cdthumb" style="background-image: url('./assets/img/thumb/newsing/aklgdat.jfif');"></div>
+                                </div>
+                                <div class="media__content">
+                                    <h3 class="media__content-name">Anh Là Ai ?</h3>
+                                    <p class="media__content-artist">Phương Ly</p>
+                                </div>
+                            </div>
+                            <div class="media__right">
+                                <i class="fa-regular fa-heart media__right-favorite"></i>
+                                <i class="fa-solid fa-heart media__right-favorited"></i>
+                                <i class="fa-solid fa-ellipsis-vertical  media__right-options"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerbar__center">
+                        <div class="actions">
+                            <div class="actions__shuffle btn-random">
+                                <i class="fa-solid fa-shuffle actions__icon icon___size-s random__icon"></i>
+                            </div>
+                            <div class="actions__pre btn-prev">
+                                <i class="fa-solid fa-backward-step  actions__icon icon___size-l"></i>
+                            </div>
+                            <div class="actions__play ">
+                                <i class="fa-regular fa-circle-play actions__btn icon___size-xl icon-play"></i>
+                                <i class="fa-regular fa-circle-pause actions__btn icon___size-xl icon-pause"></i>
+                            </div>
+                            <div class="actions__next btn-next">
+                                <i class="fa-solid fa-forward-step  actions__icon icon___size-l"></i>
+                            </div>
+                            <div class="actions__repeat btn-repeat">
+                                <i class="fa-sharp fa-solid fa-rotate-right  actions__icon icon___size-s repeat__icon"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <span id="curtime" class="time__left">00:00</span>
+                            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                            <span id="durtime" class="time__left">00:00</span>
+                        </div>
+                        <audio id="audio" src=""></audio>
+                    </div>
+                    <div class="playerbar__right">
+                        <div class="options">
+                            <div class="options__lyrics">
+                                <i class="fa-solid fa-bars-staggered icon___size-s "></i>
+                            </div>
+                            <div class="options__volume">
+                                <div id="volume-btn">
+                                    <i class="fa-solid fa-volume-high icon___size-s options__volume-icon icon-vocal active"></i>
+                                <i class="fa-sharp fa-solid fa-volume-xmark icon___size-s options__volume-icon icon-mute"></i>
+                                </div>
+                                <div>
+                                    <input class="volume" type="range" id="volume" name="volume"    step="1"
+                                           min="0" max="100">
+                                </div>
+                            </div>
+                            <div id="listbtn" class="options__list">
+                                <i class="fa-regular fa-rectangle-list icon___size-l"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="listplay">
+            <div class="listplay__wraper">
+                <div class="listplay__header">
+                    <div class="listplay__select">
+                        <p class="listplay__played">Danh Sách Phát</p>
+                        <p class="listplay__played">Nghe Gần Đây</p>
+                    </div>
+                    <div class="listplay__timeoff">
+                        <i class="fa-solid fa-stopwatch newsing__options-icon"></i>
+                    </div>
+                    <div class="listplay__options">
+                        <i class="fa-solid fa-ellipsis-vertical newsing__options-icon"></i>
+                    </div>
+                </div>
+                <div class="listplay__body">
+                    <div class="listplay__current">
+                        <div class="media listplay__current-wraper">
+                            <div class="media__primary">
+                                <div class="media__left">
+                                    <div class="media__left-img"  id="playing-thumb" style="background-image: url('./assets/img/thumb/newsing/aklgdat.jfif');"></div>
+                                </div>
+                                <div class="media__content">
+                                    <h3 class="media__content-name" id="playing-name">Anh Là Ai ?</h3>
+                                    <p class="media__content-artist" id="playing-artist">Phương Ly</p>
+                                </div>
+                            </div>
+                            <div class="media__right">
+                                <i class="fa-regular fa-heart media__right-favorite listplay__icon"></i>
+                                <i class="fa-solid fa-heart media__right-favorited"></i>
+                                <i class="fa-solid fa-ellipsis-vertical  media__right-options listplay__icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listplay__container">
+                        <h3 class="listplay__heading">Tiếp Theo</h3>
+                        <div id="listsong" class="space__list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!-- modal -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <div id="btnclose" class="auth-form_icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                 <div id="sign-up" class="auth-form">
+                        <div class="auth-form-options">
+                            <div class="auth-form-options-btn active">Tài Khoản</div>
+                            <div class="auth-form-options-btn">QR Code</div>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Ký</h3>
+                                <span id="switch-btn1" class="auth-form__auth-switch-btn">Đăng nhập</span>
+                            </div>
+    
+                            <div class="auth-form__form">  
+                                <div class="auth-form__group">
+                                    <input type="email" class="auth-form__input" placeholder="Nhập Email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập Lại Mật Khẩu">
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Bằng việc đăng ký bạn đồng ý với chúng tôi
+                                    <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                                    <a href="" class="auth-form__policy-link">Quyền riêng tư</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__control-back ">Trở Lại</button>
+                                <button class="btn btn--primary">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--size-s auth-form__social-facebook btn--with-icon">
+                                <i class="auth-form__social-icon fab fa-facebook"></i>
+                                <span class="auth-form__social-title">
+                                    Đăng ký với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="btn btn--size-s auth-form__social-google btn--with-icon">
+                                <i class="auth-form__social-icon fab fa-google"></i>
+                                <span class="auth-form__social-title">
+                                     Đăng ký với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Login Form -->
+                    <div id="sign-in" class="auth-form active">
+                        <div class="auth-form-options">
+                            <div class="auth-form-options-btn active">Tài Khoản</div>
+                            <div class="auth-form-options-btn">QR Code</div>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span id="switch-btn" class="auth-form__auth-switch-btn">Đăng Ký</span>
+                            </div>
+    
+                            <div class="auth-form__form">  
+                                <div class="auth-form__group">
+                                    <input type="email" class="auth-form__input" placeholder="Nhập Email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                               <div class="auth-form-help">
+                                   <a href="" class="auth-form-link auth-form-link--fogot">Quên mật khẩu</a>
+                                   <span class="auth-form--separeta"></span>
+                                   <a href="" class="auth-form-link auth-form-link--fogot">Cần trợ giúp?</a>
+                               </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__control-back ">Trở Lại</button>
+                                <button class="btn btn--primary">Đăng Nhập</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--size-s auth-form__social-facebook btn--with-icon">
+                                <i class="auth-form__social-icon fab fa-facebook"></i>
+                                <span class="auth-form__social-title">
+                                    Kết Nối với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="btn btn--size-s auth-form__social-google btn--with-icon">
+                                <i class="auth-form__social-icon fab fa-google"></i>
+                                <span class="auth-form__social-title">
+                                     Kết Nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,339 @@
+{
+  "QNT": [
+    {
+      "id": 1,
+      "name": "Em Làm Gì Mùa Dịch ?",
+      "artist": "QNT",
+      "thumb": "./assets/img/thumb/sing/qnt/qnt.jpg",
+      "path": "./assets/path/qnt/emlamgimuadich.mp3"
+    },
+    {
+      "id": 2,
+      "name": "Mùa Dịch Em Làm Gì ?",
+      "artist": "QNT&Tuấn Cry",
+      "thumb": "./assets/img/thumb/sing/qnt/base.jpg",
+      "path": "./assets/path/qnt/muadichemlamgi.mp3"
+    },
+    {
+      "id": 3,
+      "name": "Say Em",
+      "artist": "QNT&RefundBand",
+      "thumb": "./assets/img/thumb/sing/qnt/sayem.jpg",
+      "path": "./assets/path/qnt/sayem.mp3"
+    },
+    {
+      "id": 4,
+      "name": "Green Love",
+      "artist": "QNT&Cashmel",
+      "thumb": "./assets/img/thumb/sing/qnt/greenlove.jpg",
+      "path": "./assets/path/qnt/greenlove.mp3"
+    },
+    {
+      "id": 5,
+      "name": "Ông Trời Làm Tội Anh Chưa",
+      "artist": "QNT&Mr.Hanh,Tuấn Cry",
+      "thumb": "./assets/img/thumb/sing/qnt/ongtroilamtoianhchua.jpg",
+      "path": "./assets/path/qnt/ongtroilamtoianhchua.mp3"
+    },
+    {
+      "id": 6,
+      "name": "Querry",
+      "artist": "QNT&MCK, Trung Trần",
+      "thumb": "./assets/img/thumb/sing/qnt/query.jpg",
+      "path": "./assets/path/qnt/Querry.mp3"
+    },
+    {
+      "id": 7,
+      "name": "Baby Call",
+      "artist": "QNT&Rastz",
+      "thumb": "./assets/img/thumb/sing/qnt/babycall.jpg",
+      "path": "./assets/path/qnt/babycall.mp3"
+    }
+   
+    ],
+    "newsing": [
+      {
+        "id": 1,
+        "name": "Xuân Thì",
+        "artist": "Hà Anh Tuấn",
+        "thumb": "./assets/img/thumb/newsing/xuanthi.jfif",
+        "path": "./assets/path/new/xuanthi.mp3"
+      },
+      
+      {
+        "id": 2,
+        "name": "Có Em",
+        "artist": "Low G & Madihu",
+        "thumb": "./assets/img/logo/music.png",
+        "path": "./assets/path/new/coem.mp3"
+      },
+      {
+        "id": 3,
+        "name": "Anh Không Làm Gì Đâu Anh Thề",
+        "artist": "Phúc Du & ...",
+        "thumb": "./assets/img/thumb/newsing/aklgdat.jfif",
+        "path": "./assets/path/new/aklgdat.mp3"
+      },
+      {
+        "id": 4,
+        "name": "Em Bỏ Thuốc Chưa",
+        "artist": "Bích Phương",
+        "thumb": "./assets/img/thumb/newsing/embothuocchua.jfif",
+        "path": "./assets/path/new/embothuocchua.mp3"
+      },
+      
+      {
+        "id": 5,
+        "name": "Chạy Khỏi Thế Giới Này",
+        "artist": "DaLad & Phương Ly",
+        "thumb": "./assets/img/thumb/newsing/chaykhoithegioinay.jfif",
+        "path": "./assets/path/new/chaykhoithegioinay.mp3"
+      },
+      {
+        "id": 6,
+        "name": "Đứa Nào Làm Em Buồn",
+        "artist": "Phúc Du & Hoàng Dũng",
+        "thumb": "./assets/img/thumb/newsing/duanaolamembuon.jfif",
+        "path": "./assets/path/new/duanaolamembuon.mp3"
+      },
+      {
+        "id": 7,
+        "name": "Một Mình Có Buồn Không",
+        "artist": "Thiều Bảo Trâm",
+        "thumb": "./assets/img/thumb/newsing/motminhcobuonkhong.jfif",
+        "path": "./assets/path/new/motminhcobuonkhong.mp3"
+      },
+      {
+        "id": 8,
+        "name": "Tháng Tư Lời Nói Dối Của Em",
+        "artist": "Hà Anh Tuấn",
+        "thumb": "./assets/img/thumb/newsing/t4loinoidoicuaem.jfif",
+        "path": "./assets/path/new/t4loinoidoicuaem.mp3"
+      },
+      {
+        "id": 9,
+        "name": "Tháng Mấy Em Nhớ Anh",
+        "artist": "Hà Anh Tuấn",
+        "thumb": "./assets/img/thumb/newsing/thangmayemnhoanh.jfif",
+        "path": "./assets/path/new/thangmayemnhoanh.mp3"
+      },
+      {
+        "id": 10,
+        "name": "I TAEYEON",
+        "artist": "TAEYEON(SNSD)",
+        "thumb": "./assets/img/logo/music.png",
+        "path": "./assets/path/new/itea.mp3"
+      },
+      {
+        "id": 11,
+        "name": "Từ Chối Nhẹ Nhàng Thôi",
+        "artist": "Bích Phương & Phúc Du",
+        "thumb": "./assets/img/thumb/newsing/tuchoinhenhangthoi.jfif",
+        "path": "./assets/path/new/tuchoinhenhangthoi.mp3"
+      },
+      {
+        "id": 12,
+        "name": "Anh Thèm Được Ngủ",
+        "artist": "Táo",
+        "thumb": "./assets/img/logo/music.png",
+        "path": "./assets/path/new/anhthemduocngu.mp3"
+      }
+
+     
+      ],
+      "cute": [
+        {
+          "id": 1,
+          "name": "Anh Yêu Em Rồi Đấy",
+          "artist": "Huy R& Ngắn",
+          "thumb": "./assets/img/thumb/sing/fav/anhyeuemroiday.jfif",
+          "path": "./assets/path/fav/anhyeuemroiday.mp3"
+        },
+        {
+          "id": 2,
+          "name": "Dáng Xinh",
+          "artist": "Low G",
+          "thumb": "./assets/img/thumb/sing/fav/dangxinh.jfif",
+          "path": "./assets/path/fav/dangxinh.mp3"
+        },
+        {
+          "id": 3,
+          "name": "ThichThich",
+          "artist": "Phương Ly",
+          "thumb": "./assets/img/thumb/sing/thichthich.jfif",
+          "path": "./assets/path/fav/thichthich.mp3"
+        },
+        {
+          "id": 4,
+          "name": "Mặt Mộc",
+          "artist": "VAnh&Nguyen Ngoc Phan",
+          "thumb": "./assets/img/thumb/sing/fav/matmoc.jfif",
+          "path": "./assets/path/fav/matmoc.mp3"
+        },
+        {
+          "id": 5,
+          "name": "Anh Biết",
+          "artist": "Nger(MCK)",
+          "thumb": "./assets/img/thumb/sing/fav/anhbiet.jfif",
+          "path": "./assets/path/fav/anhbiet.mp3"
+        },
+        {
+          "id": 6,
+          "name": "Anh Là Ai ?",
+          "artist": "Phương Ly",
+          "thumb": "./assets/img/thumb/sing/anhlaai.jfif",
+          "path": "./assets/path/fav/anhlaai.mp3"
+        },
+        {
+          "id": 7,
+          "name": "Cưới Thôi",
+          "artist": "Masew&Bray,N.A",
+          "thumb": "./assets/img/thumb/sing/fav/cuoithoi.jfif",
+          "path": "./assets/path/fav/cuoithoi.mp3"
+        },
+        {
+          "id": 8,
+          "name": "Mặt TRời Của Em",
+          "artist": "Phương Ly",
+          "thumb": "./assets/img/thumb/sing/mattroicuaem.jfif",
+          "path": "./assets/path/fav/mattroicuaem.mp3"
+        },
+        {
+          "id": 9,
+          "name": "Missing You",
+          "artist": "Phương Ly",
+          "thumb": "./assets/img/thumb/sing/nhoanh.jfif",
+          "path": "./assets/path/fav/anhyeuemroiday.mp3"
+        },{
+          "id": 10,
+          "name": "Tình Đắng Như Ly Cafe",
+          "artist": "Nger(MCK)",
+          "thumb": "./assets/img/thumb/sing/fav/tinhdangnhulycafe.jfif",
+          "path": "./assets/path/fav/tinhdangnhulycafe.mp3"
+        },{
+          "id": 11,
+          "name": "Tình Yêu Như Bát Cơm Rang",
+          "artist": "Thiện Hưng",
+          "thumb": "./assets/img/thumb/sing/fav/tinhyeubatcomrang.jfif",
+          "path": "./assets/path/fav/tinhyeubatcomrang.mp3"
+        }
+
+      ],
+      "rap": [
+        {
+          "id": 1,
+          "name": "Cypher Nhà Làm",
+          "artist": "Low G",
+          "thumb": "./assets/img/thumb/sing/rap/taokingucfan.jfif",
+          "path": "./assets/path/rap/cyphertaoki.mp3"
+        },
+        {
+          "id": 2,
+          "name": "Mày Đang Giấu Cái Gì Đấy",
+          "artist": "Andree & Đen Vâu",
+          "thumb": "./assets/img/thumb/sing/rap/andree.jfif",
+          "path": "./assets/path/rap/mdgcgd.mp3"
+        },
+        {
+          "id": 3,
+          "name": "Buôn Hàng",
+          "artist": "Tommy Tèo",
+          "thumb": "./assets/img/thumb/sing/rap/tommyteo.jfif",
+          "path": "./assets/path/rap/buonhang.mp3"
+        },
+        {
+          "id": 4,
+          "name": "Quan Tài Hư",
+          "artist": "Mr. Quang Tèo",
+          "thumb": "./assets/img/thumb/sing/rap/quantaihu.jfif",
+          "path": "./assets/path/rap/quantaihu.mp3"
+        },
+        {
+          "id": 5,
+          "name": "Chán Gái 707",
+          "artist": "Chủ Tọa Low G",
+          "thumb": "./assets/img/thumb/sing/rap/chutoa.jfif",
+          "path": "./assets/path/rap/chângi707.mp3"
+        },
+        {
+          "id": 6,
+          "name": "Rap Chậm Thôi",
+          "artist": "Rapital & MCK",
+          "thumb": "./assets/img/thumb/sing/rap/rapchamthoi.jfif",
+          "path": "./assets/path/rap/rapchamthoi.mp3"
+        },
+        {
+          "id": 7,
+          "name": "Tam Giác",
+          "artist": "Phan Anh& Low G",
+          "thumb": "./assets/img/thumb/sing/rap/tamgiac.jfif",
+          "path": "./assets/path/rap/tamgiac.mp3"
+        },
+        {
+          "id": 8,
+          "name": "Phú Quý Bò Viên",
+          "artist": "Tùng Chùa & Phan Anh",
+          "thumb": "./assets/img/thumb/sing/rap/phuquybovien.jfif",
+          "path": "./assets/path/rap/phuquybovien.mp3"
+        }
+        ],
+      "fav": [
+        {
+          "id": 1,
+          "name": "Anh Yêu Em Rồi Đấy",
+          "artist": "Huy R& Ngắn",
+          "thumb": "./assets/img/thumb/sing/fav/anhyeuemroiday.jfif",
+          "path": "./assets/path/fav/anhyeuemroiday.mp3"
+        },
+        {
+          "id": 2,
+          "name": "Chạy Khỏi Thế Giới Này",
+          "artist": "DaLad & Phương Ly",
+          "thumb": "./assets/img/thumb/newsing/chaykhoithegioinay.jfif",
+          "path": "./assets/path/new/chaykhoithegioinay.mp3"
+        },
+        {
+          "id": 3,
+          "name": "Đứa Nào Làm Em Buồn",
+          "artist": "Phúc Du & Hoàng Dũng",
+          "thumb": "./assets/img/thumb/newsing/duanaolamembuon.jfif",
+          "path": "./assets/path/new/duanaolamembuon.mp3"
+        },
+        {
+          "id": 4,
+          "name": "Dáng Xinh",
+          "artist": "Low G",
+          "thumb": "./assets/img/thumb/sing/fav/dangxinh.jfif",
+          "path": "./assets/path/fav/dangxinh.mp3"
+        },
+        {
+          "id": 5,
+          "name": "Anh Biết",
+          "artist": "Nger(MCK)",
+          "thumb": "./assets/img/thumb/sing/fav/anhbiet.jfif",
+          "path": "./assets/path/fav/anhbiet.mp3"
+        },
+        {
+          "id": 6,
+          "name": "Mặt Mộc",
+          "artist": "VAnh&Nguyen Ngoc Phan",
+          "thumb": "./assets/img/thumb/sing/fav/matmoc.jfif",
+          "path": "./assets/path/fav/matmoc.mp3"
+        },
+        {
+          "id": 7,
+          "name": "ThichThich",
+          "artist": "Phương Ly",
+          "thumb": "./assets/img/thumb/sing/thichthich.jfif",
+          "path": "./assets/path/fav/thichthich.mp3"
+        },
+        {
+          "id": 8,
+          "name": "Tình Yêu Như Bát Cơm Rang",
+          "artist": "Thiện Hưng",
+          "thumb": "./assets/img/thumb/sing/fav/tinhyeubatcomrang.jfif",
+          "path": "./assets/path/fav/tinhyeubatcomrang.mp3"
+        }
+      ]
+
+}

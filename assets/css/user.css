@@ -1,0 +1,221 @@
+.space {
+    position: relative;
+    bottom: -12%;
+}
+.lineafter {
+    position: relative;
+}
+.lineafter::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-image:linear-gradient(to right ,rgb(30,142,173), rgb(142,200,94));
+    left: 10%;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.spacechill__card-wraper {
+    max-height: 222px;
+}
+.spacechill__text {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+.spacechill__card {
+    height: 100%;
+    background: linear-gradient(0.25turn, rgb(30,142,173), #ebf8e1, rgb(142,200,94));
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.spacechill__body {
+    position: relative;
+    top: 30%;
+}
+.spacechill__content {
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+}
+.spacechill__name {
+    color: var(--white-color);
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.spacechill__label {
+    color: var(--white-color);
+    font-size: 1.48rem;
+    margin: 4px 0 10px 0;
+    line-height: 1.48rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.spacechill__icon {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.spacechill__title {
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    text-align: center;
+    font-weight: 550;
+    background: -webkit-linear-gradient(to right left ,rgb(142,200,94), rgb(14, 136, 170));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.spacechill__bg {
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+
+
+/* libraly */
+
+.libraly {
+
+}
+.libraly__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    position: relative;
+}
+.libraly__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+}
+.libraly__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.is__active {
+    position: relative;
+}
+.libraly__list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.8px;
+    background-color: var(--white-color);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.is__active::after{
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 2px;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    border-bottom: solid 4px var(--primary-color);
+    z-index: 88;
+    border-radius: 4px;
+}
+.libraly__content {
+
+}
+.libraly__select-list {
+    list-style: none;
+    width: 169px !important;
+}
+.libraly__select-item {
+    
+}
+
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: rgb(255,255,255,0.08);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.song:hover {
+    background-color: rgb(17, 164, 193);
+}
+.song:hover {
+    
+}
+.song__left {
+    display: flex;
+    width: 30%;
+}
+.song__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+.song__content {
+    padding: 14px 0  0 10px;
+}
+.song__name {
+    margin: 0;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+.song__artist {
+    margin: 0;
+    font-size: 1.32rem;
+    color: var(--white-color);
+}
+.song__right {
+    display: flex;
+    align-items: center;
+}
+.song__favorite {
+    color: var(--heart-color);
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+.song__fulltimes {
+    color: var(--white-color);
+    font-size: 1.32rem;
+}
+.song__center {
+    display: flex;
+    align-items: center;
+    width: 42%;
+    justify-content: space-between;
+}
+.song__replay {
+    font-size: 1.32rem;
+    font-weight: 450;
+    color: var(--white-color);
+}
