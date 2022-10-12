@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch sing.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
