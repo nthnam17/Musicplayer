@@ -265,13 +265,38 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
 }
-.player__content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
+.player__center {
+    width: 50%;
 }
+.player__left {
+    width: 15%;
+    display: flex;
+    justify-content: end;
+}
+.player__left-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.player__right {
+    width: 15%;
+}
+.player__icon {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    
+}
+
+
 .actions {
     display: flex;
     align-items: center;
@@ -343,7 +368,7 @@
     padding: 0 10px;
 }
 .progress {
-    width: 32%;
+    width: 65%;
 }
 
 .cd {

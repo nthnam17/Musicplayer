@@ -7,6 +7,9 @@
         .header__mbl {
             display: none;
         }
+        .sidebar__logo--rep {
+            display: none;
+        }
     }
 /* Table */
     @media (min-width: 420px) and (max-width: 780px) { 
@@ -420,6 +423,41 @@
         }
         .actions__play {
             padding: 8px;
+        }
+        /* index repomsive */
+        .modal {
+            display: none !important;
+        }
+        .index__user--rep {
+            display: none;
+        }
+        .index__gest--rep {
+
+        }
+        .grid__column-3-12 {
+            width: 100%;
+            padding: 0;
+            margin: 8px;
+
+        }
+        .newsing__content-wrap {
+            background-color: rgb(255,255,255,0.08);
+            border-radius: 4px;
+        }
+        .newsing__list {
+            margin: 0;
+        }
+        .grid__column-4-12 {
+            width: 33%;
+            padding-top: 10px;
+        }
+        #listNewsing {
+            height: 300px;
+            overflow: scroll;
+            -webkit-mask-image: linear-gradient(180deg,#fff,hsla(0,0%,100%,.8) 70%,#fff 25%,#fff 75%,hsla(0,0%,100%,.8) 90%,hsla(0,0%,100%,0));
+        }
+        .top100--rep {
+            margin-bottom: 50px;
         }
     }
 

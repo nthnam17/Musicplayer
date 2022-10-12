@@ -1,0 +1,79 @@
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.modal {
+    background-color: rgb(168,193,238);
+    height: 812px;
+}
+.modal__body {
+
+}
+.modal__bg  {
+    background-color: rgb(4,86,128);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.modal__logo {
+    padding: 10px;
+    width: 100%;
+}
+.modal__inner {
+    padding: 20px;
+}
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal__heading {
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 0 8px;
+}
+.modal__title {
+    font-size: 1.4rem;
+    margin: 0;
+    color: rgb(241,81,129);
+    font-weight: 500;
+}
+.modal__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.modal__item {
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.modal__link {
+    display: flex;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.modal__icon {
+    width: 40px;
+    height: 40px;
+}
+.modal__name {
+    color: rgba(17,164,193,1);
+    padding-left: 10px;
+    font-size: 1.42rem;
+    font-weight: 600;
+}
+
+.modal__close {
+    font-size: 2.8rem;
+    padding: 6px;
+}

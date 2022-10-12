@@ -73,16 +73,27 @@
                                     <div class="header__pagination-item">
                                         <i class="header__pagination-icon fa-sharp fa-solid fa-arrow-right"></i>
                                     </div>
+                                    <div class="header__mbl-left">
+                                        <i class="fa-solid fa-chevron-left header__mbl-icon"></i>
+                                    </div>
                                 </div>
                                 <div class="header__search-input--wrap">
-                                    <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
-                                    <!-- <div class="header__search-history">
-                                        <p class="header__history-heading">Lịch Sử Tìm Kiếm</p>
-                                        <ul class="header__history-list">
-                                            <li class="header__history-item"><a href=""></a>Asus TUF 15</li>
-                                            <li class="header__history-item"><a href=""></a>Acer Nitro 5</li>
-                                        </ul>
-                                    </div> -->
+                                    <input id="search" type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                                    <div class="header__search-result">
+                                        <div class="result__list">
+                                            <div class="song result__song">
+                                                <div class="song__left history__search">
+                                                    
+                                                    <div class="song__content history__search--modifiler">
+                                                        <h3 class="song__name ">Lịch Sử Tìm Kiếm </h3>
+                                                        <p class="song__artist">Không có lịch sử</p>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="header__result-heading hide">Không Có Kết Quả Phù Hợp</p>
+                                    </div>
                                     <button class="header__search-btn">
                                         <i class="header__search-btn-icon fas fa-search"></i>
                                     </button>
@@ -91,17 +102,20 @@
                             </div>
                             <div class="header__search-right">
                                 <ul class="header__search-list">
-                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                    <li class="header__search-item btn--info"><div href="" class="header__search-link">
                                         <i class="fa-solid fa-shirt header__search-icon"></i>
-                                    </a></li>
-                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                    </div></li>
+                                    <li class="header__search-item btn--info"><div href="" class="header__search-link">
                                         <i class="fa-sharp fa-solid fa-plus header__search-icon"></i>
-                                    </a></li>
-                                    <li class="header__search-item"><a href="" class="header__search-link">
+                                    </div></li>
+                                    <li class="header__search-item btn--info"><div href="" class="header__search-link">
                                         <i class="fa-solid fa-gear header__search-icon"></i>
-                                    </a></li>
-                                    <a href="" class="header__search-user">
+                                    </div></li>
+                                    <a href="" class="header__search-user index__user--rep">
                                         <img src="./assets/img/user/isme.jpg" alt="" class="header__search-img">
+                                    </a>
+                                    <a href="./loginmbl.html" class="header__search-user index__gest--rep">
+                                        <img src="./assets/img/logo/gest.jfif" alt="" class="header__search-img">
                                     </a>
                                 </ul>
                             </div>
@@ -116,14 +130,14 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid__column-3-12">
+                            <div class="grid__column-3-12 index__user--rep">
                                 <div class="slider__items">
                                     <a href="" class="slider__link">
                                         <img src="./assets/img/banner/Pink-Venom.jpg" alt="" class="slider__img">
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid__column-3-12">
+                            <div class="grid__column-3-12 index__user--rep">
                                 <div class="slider__items">
                                     <a href="" class="slider__link">
                                         <img src="./assets/img/banner/thich-thich.jpeg" alt="" class="slider__img">
@@ -304,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="top100">
+                    <div class="top100 top100--rep">
                         <div class="top100__header">
                             <h2 class="top100__heading">TOP 100</h2>
                             <div class="top100__select">
@@ -374,10 +388,10 @@
             </div>
             <div class="playerbar">
                 <div class="grid__full">
-                    <div class="playerbar__left">
+                    <div class="playerbar__left playerbar__rep">
                         <div class="media">
                             <div class="media__primary">
-                                <div class="media__left">
+                                <div class="media__left ">
                                     <div class="media__left-img" id="cdthumb" style="background-image: url('./assets/img/thumb/newsing/aklgdat.jfif');"></div>
                                 </div>
                                 <div class="media__content">
@@ -385,16 +399,16 @@
                                     <p class="media__content-artist">Phương Ly</p>
                                 </div>
                             </div>
-                            <div class="media__right">
+                            <div class="media__right player__user--rep">
                                 <i class="fa-regular fa-heart media__right-favorite"></i>
                                 <i class="fa-solid fa-heart media__right-favorited"></i>
                                 <i class="fa-solid fa-ellipsis-vertical  media__right-options"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="playerbar__center">
+                    <div class="playerbar__center playerbar__rep">
                         <div class="actions">
-                            <div class="actions__shuffle btn-random">
+                            <div class="actions__shuffle btn-random player__user--rep">
                                 <i class="fa-solid fa-shuffle actions__icon icon___size-s random__icon"></i>
                             </div>
                             <div class="actions__pre btn-prev">
@@ -407,11 +421,11 @@
                             <div class="actions__next btn-next">
                                 <i class="fa-solid fa-forward-step  actions__icon icon___size-l"></i>
                             </div>
-                            <div class="actions__repeat btn-repeat">
+                            <div class="actions__repeat btn-repeat player__user--rep">
                                 <i class="fa-sharp fa-solid fa-rotate-right  actions__icon icon___size-s repeat__icon"></i>
                             </div>
                         </div>
-                        <div class="time">
+                        <div class="time player__user--rep">
                             <span id="curtime" class="time__left">00:00</span>
                             <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
                             <span id="durtime" class="time__left">00:00</span>
@@ -439,6 +453,27 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <input id="progress__mbl" class="progress__mbl" type="range" value="0" step="1" min="0" max="100">
+
+            <div class="menu__mbl">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="./user.html" class="menu__link">
+                        <i class="fa-sharp fa-solid fa-music sidebar__icon"></i>
+                    </a></li>
+                    <li class="menu__item"><a href="./index.html" class="menu__link">
+                        <i class="fa-solid fa-record-vinyl sidebar__icon"></i>
+                    </a></li>
+                    <li class="menu__item"><a href="" class="menu__link">
+                        <i class="fa-sharp fa-solid fa-ranking-star sidebar__icon"></i>
+                    </a></li>
+                    <li class="menu__item"><a href="" class="menu__link">
+                        <i class="fa-solid fa-compact-disc sidebar__icon"></i>
+                    </a></li>
+                    <li class="menu__item"><a href="" class="menu__link">
+                        <i class="fa-solid fa-bars sidebar__icon"></i>
+                    </a></li>
+                </ul>
             </div>
 
         </div>
@@ -494,7 +529,7 @@
                     <div id="btnclose" class="auth-form_icon">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
-                 <div id="sign-up" class="auth-form">
+                 <form method="POST" id="sign-up" class="auth-form">
                         <div class="auth-form-options">
                             <div class="auth-form-options-btn active">Tài Khoản</div>
                             <div class="auth-form-options-btn">QR Code</div>
@@ -507,13 +542,24 @@
     
                             <div class="auth-form__form">  
                                 <div class="auth-form__group">
-                                    <input type="email" class="auth-form__input" placeholder="Nhập Email">
+                                    <label for="username" class="auth-form__label">Tên Đăng Nhập</label>
+                                    <input id="create__username" type="text" class="auth-form__input" placeholder="Nhập Tên Đăng Nhập">
+                                    <span class="auth-form__msg"></span>
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                    <label for="email" class="auth-form__label">Email</label>
+                                    <input id="email" type="text" class="auth-form__input" placeholder="VD: email@domain.com">
+                                    <span class="auth-form__msg"></span>
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Nhập Lại Mật Khẩu">
+                                    <label for="create__password" class="auth-form__label">Mật Khẩu</label>
+                                    <input id="create__password" type="text" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                    <span class="auth-form__msg"></span>
+                                </div>
+                                <div class="auth-form__group">
+                                    <label for="password__confirm" class="auth-form__label">Nhập Lại Mật Khẩu</label>
+                                    <input id="password__confirm" type="text" class="auth-form__input" placeholder="Nhập Lại Mật Khẩu">
+                                    <span class="auth-form__msg"></span>
                                 </div>
                             </div>
                             <div class="auth-form__aside">
@@ -525,7 +571,7 @@
                             </div>
                             <div class="auth-form__controls">
                                 <button class="btn auth-form__control-back ">Trở Lại</button>
-                                <button class="btn btn--primary">Đăng ký</button>
+                                <button onclick="signup()" id="signupbtn" class=" btn btn--primary">Đăng ký</button>
                             </div>
                         </div>
                         <div class="auth-form__socials">
@@ -542,9 +588,9 @@
                                 </span>
                             </a>
                         </div>
-                    </div> 
+                    </form> 
                     <!-- Login Form -->
-                    <div id="sign-in" class="auth-form active">
+                    <form method="POST" id="sign-in" class="auth-form active">
                         <div class="auth-form-options">
                             <div class="auth-form-options-btn active">Tài Khoản</div>
                             <div class="auth-form-options-btn">QR Code</div>
@@ -557,10 +603,14 @@
     
                             <div class="auth-form__form">  
                                 <div class="auth-form__group">
-                                    <input type="email" class="auth-form__input" placeholder="Nhập Email">
+                                    <label for="username" class="auth-form__label">Tên Đăng Nhập</label>
+                                    <input id="username" name="username" type="email" class="auth-form__input" placeholder="Nhập Tên Đăng Nhập">
+                                    <span class="auth-form__msg"></span>
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                    <label for="password" class="auth-form__label">Mật Khẩu</label>
+                                    <input id="password" name="password" type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                    <span class="auth-form__msg"></span>
                                 </div>
                             </div>
                             <div class="auth-form__aside">
@@ -572,7 +622,7 @@
                             </div>
                             <div class="auth-form__controls">
                                 <button class="btn auth-form__control-back ">Trở Lại</button>
-                                <button class="btn btn--primary">Đăng Nhập</button>
+                                <button id="signinbtn" onclick="login()" class="btn btn--primary">Đăng Nhập</button>
                             </div>
                         </div>
                         <div class="auth-form__socials">
@@ -589,13 +639,180 @@
                                 </span>
                             </a>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <!-- toast -->
+        <div id="toast">
+            
+            <div class="toast toast--success ">
+                <div class="toast__left">
+                    <i class="fa-solid fa-circle-check toast__icon"></i>
+                </div>
+                <div class="toast__center">
+                    <h3 class="toast__name">Thao Tác Thành Công</h3>
+                    <div class="toast__msg">Chào Mừng bạn đến với Music Player</div>
+                </div>
+                <div class="toast__right">
+                    <i class="fa-solid fa-xmark toast__close"></i>
+                </div>
+            </div>
+            <div class="toast toast--info">
+                <div class="toast__left">
+                    <i class="fa-solid fa-circle-info toast__icon"></i>
+                </div>
+                <div class="toast__center">
+                    <h3 class="toast__name">Chức Năng Đang Hoàn Thiện</h3>
+                    <div class="toast__msg">Chúng tôi rất xin lỗi vì sự bất tiện này</div>
+                </div>
+                <div class="toast__right">
+                    <i class="fa-solid fa-xmark toast__close"></i>
+                </div>
+            </div>
+            <div class="toast toast--error">
+                <div class="toast__left">
+                    <i class="fa-solid fa-circle-check toast__icon"></i>
+                </div>
+                <div class="toast__center">
+                    <h3 class="toast__name">Thao Tác Thất Bại</h3>
+                    <div class="toast__msg"></div>
+                </div>
+                <div class="toast__right">
+                    <i class="fa-solid fa-xmark toast__close"></i>
+                </div>
+            </div>
+            </div>
+            <script src="./assets/js/validator.js"></script>
+            <script src="./assets/js/main.js"></script>
+            <!-- Xử lý đăng ký đăng nhập -->
+        <script>
+            const apiUsers = 'http://localhost:3000/user'
+            // Xử lý đăng nhập
+                    function login () {
+                        getUser(hanldeLogin)
+                  }
+                    
 
+                    function getUser(callback) {
+                    fetch (apiUsers)
+                        .then(function(response) {
+                        return response.json()
+                        })
+                        .then(callback)
+                        .catch(function(err) {
+                        console.log('Loi', err)
+                        })
+                    }
 
-        <script src="./assets/js/main.js"></script>
+                    function hanldeLogin(data) {
+                    const username = document.getElementById("username").value;
+                    const password = document.getElementById("password").value;
+                    console.log(data)
+                    data.forEach((data) => {
+                        if (data.username == username && data.password == password) {
+                            signInbtn.onclick = function() {
+                              toastSuccess.classList.add('active')
+                              modal.classList.add("disable")
+                                                            }
+                         }else {
+                            signInbtn.onclick = function() {
+                                toastError.classList.add('active')
+                                setTimeout(() => {
+                                    toastError.classList.remove('active')
+                                },4000)
+                            }
+                        }
+                    });
+                    }
+                    //Xử lý đăng ký
+                    function signup() {
+                         handleCreateForm();
+                    }
+
+                    function createUser(data) {
+                    fetch(apiUsers, {
+                        method: "POST",
+                        headers: {
+                        "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(data),
+                    })
+                    .then(function (res) {
+                        return res.json();
+                    })
+                    if (data) {
+                        signUpbtn.onclick = function () {
+                            toastSuccess.classList.add("active");
+                        }
+                    }else {
+                        signUpbtn.onclick = function() {
+                                toastError.classList.add('active')
+                                setTimeout(() => {
+                                    toastError.classList.remove('active')
+                                },4000)
+                            }
+                    }
+                    }
+                    function handleCreateForm() {
+                    const username = document.getElementById("create__username");
+                    const password = document.getElementById("create__password");
+                    const user = {
+                        username: username.value,
+                        password: password.value,
+                    };
+                    if (user.password == null || user.username == null) {
+                        signUpbtn.onclick = function(e) {
+                                e.preventDefault()
+                                toastError.classList.add('active')
+                                setTimeout(() => {
+                                    toastError.classList.remove('active')
+                                },4000)
+                            }
+                    }
+                    else {
+                        createUser(user);
+                    }
+                    
+                }
+        </script>
+            <!--Xử lsy form -->
+        <script>
+            // Config form
+            validator(
+                [
+                {
+                form: '#sign-up',
+                rules: [
+                    validator.isRequired('#create__username'),
+                    validator.minLenght('#create__username', 3),
+                    validator.isRequired('#email'),
+                    validator.isEmail('#email'),
+                    validator.minLenght('#create__password', 6),
+                    validator.isRequired('#password__confirm'),
+                    validator.isConfirm('#password__confirm', function(){
+                        return document.querySelector('#sign-up #create__password').value
+                    })
+                ]
+                
+            },
+            {
+                form: '#sign-in',
+                rules: [
+                    validator.isRequired('#username'),
+                    validator.minLenght('#username', 3),
+                    validator.minLenght('#password', 6),
+                    validator.isRequired('#password')
+                    
+                ]
+            }
+                ]
+                
+            
+            )
+        </script>
+        
+       
     </body>
     
 </html>

@@ -34,6 +34,7 @@ const volumeIcon = $('#volume-btn')
 //  Create the home
 const listSing = $('#listsong')
 const listNewsing = $('#listNewsing')
+const listResult = $('.result__list')
 const closeBtn = $('#btnclose')
 const modal = $('.modal')
 const signUp =$('#sign-up')
@@ -42,6 +43,14 @@ const switchBtn = $('#switch-btn')
 const switchBtn1 = $('#switch-btn1')
 const listBtn = $('#listbtn')
 const listPlay = $('.listplay')
+const toastSuccess = $('.toast--success')
+const toastIfno = $('.toast--info')
+const toastError = $('.toast--error')
+const signInbtn = $('#signinbtn')
+const signUpbtn = $('#signupbtn')
+const bugBtns = $$('.btn--info')
+const input = $('#search')
+const search = $('.header__search-result')
 
 
 
@@ -312,7 +321,53 @@ function playList(listSong) {
         listBtn.onclick = function() {
             listPlay.classList.toggle("active")
         }
+        
+        console.log(bugBtns)
+        bugBtns.forEach(bugBtn => {
+          bugBtn.onclick = function() {
+            toastIfno.classList.add('active')
+            setTimeout(() => {
+              toastIfno.classList.remove('active')
+              },4000)
+          }
+        })
+        
 
+        // Xử lý thanh search
+        input.onclick = function() {
+          console.log(input)
+        }
+        
+               input.addEventListener("keyup", event => {
+                    const nullResult = $('.header__result-heading')
+                    const target = event.target;
+                    const value = target.value;
+                    const convertToLowerCase = value.toLowerCase();
+                    const filterData = _this.songs.filter(song => song.name.toLowerCase().includes(convertToLowerCase))
+                    console.log(filterData)
+                    if (convertToLowerCase.length === 0 || convertToLowerCase.length < 1) {
+                      nullResult.classList.remove('hide')
+                    }else {
+                      nullResult.classList.add('hide')
+                      const htmls = filterData.map ((item , index) => {
+                        return `<div class="song result__song">
+                        <div class="song__left">
+                            <img src="${item.thumb}" alt="" class="song__img">
+                            <div class="song__content">
+                                <h3 class="song__name">${item.name}</h3>
+                                <p class="song__artist">${item.artist}</p>
+                            </div>
+                           
+                        </div>
+                    </div>`
+                  })
+                    listResult.innerHTML = htmls.join('');
+                }
+            
+                  })
+                    
+                    
+                  
            },
     //    //Load bai hat hien tai
        loadCurrentSong: function() {
@@ -377,6 +432,10 @@ function playList(listSong) {
           this.isRepeat = this.config.isRepeat
           this.isMute = this.config.isMute
         },
+          
+        
+        
+        
 
 
     
@@ -398,7 +457,7 @@ function playList(listSong) {
       this.loadCurrentSong()
   
       this.render()
-    
+      
    }
 
   }

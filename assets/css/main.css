@@ -161,7 +161,7 @@
     font-size: 1.6rem;
     color: white;
     padding-left: 10px;
-
+    position: relative;
 }
 .header__search-input::placeholder{
     color: var(--white-color);
@@ -856,3 +856,41 @@
     height: 500px;
 }
 
+
+
+
+.header__search-result {
+    position: absolute;
+    background-color: #fff;
+    bottom: -391px;
+    left: 116px;
+    width: 442px;
+    border-radius: 4px;
+    height: 400px;
+    overflow: scroll;
+    display: none;
+}
+.header__search-input:focus ~ .header__search-result {
+    display: block;
+}
+
+.header__result-heading {
+    text-align: center;
+    font-size: 1.42rem;
+}
+
+.header__result-heading.hide {
+    display: none;
+}
+.result__song {
+    margin: 6px;
+    background-color: var(--primary-color);
+}
+
+.history__search {
+    width: 100%;
+}
+.history__search--modifiler {
+    width: 100%;
+    text-align: center;
+}

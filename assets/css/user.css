@@ -25,6 +25,7 @@
     max-height: 222px;
 }
 .spacechill__text {
+    
     color: var(--white-color);
     font-size: 1.4rem;
     margin-top: 0;
@@ -35,6 +36,29 @@
     border-radius: 4px;
     position: relative;
     overflow: hidden;
+}
+.spacechill__card::after {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    content: "";
+    border: 10px;
+    border-color: transparent transparent transparent var(--white-color);
+    border-width: 29px 39px 29px;
+    border-style: solid;
+    left: 42%;
+    top: 34%;
+    border-radius: 2px;
+}
+.spacechill__card-wraper:hover .spacechill__card::after{
+    display: block;
+}
+.spacechill__card-wraper:hover {
+    background-color: rgb(255,255,255,0.2);
+    --growth-from: 0.9;
+    --growth-to: 1;
+    margin: auto;
+    animation: Growth linear 0.8s;
 }
 
 .spacechill__body {
