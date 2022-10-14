@@ -45,7 +45,7 @@ const switchBtn1 = $('#switch-btn1')
 
      const PLAYER_STORAGE_KEY = 'CHILLER-KEY'
 
-const apiSongs = 'http://localhost:3000/fav'
+const apiSongs = 'https://nthnam17musicplayer.herokuapp.com/fav'
 
 getList(playList)
 

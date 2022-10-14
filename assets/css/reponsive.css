@@ -7,8 +7,14 @@
         .header__mbl {
             display: none;
         }
+        .header__mbl,
+        .index__gest--rep,
+        .header__mbl-icon,
         .sidebar__logo--rep {
             display: none;
+        }
+        .header__mbl {
+            display: none !important;
         }
     }
 /* Table */
@@ -17,6 +23,14 @@
         :root {
             --sidebar-width: 60px;
         }
+        .header__mbl {
+            display: none !important;
+        }
+        .player__left,
+        .player__right,
+        .progress__mbl,
+        .index__gest--rep,
+        .header__mbl-icon,
         .header__mbl {
             display: none;
         }
@@ -51,7 +65,7 @@
             padding-bottom: 100px;
         }
         .player {
-            bottom: 43%;
+            bottom: 38%;
         }
         /* user reponsive */
         .sidebar {
@@ -141,6 +155,8 @@
     }
 /* Mobile */
     @media (max-width: 420px) {
+        .player__left,
+        .player__right,
         .spaces__header-center {
             display: none;
         }
@@ -166,7 +182,10 @@
             background-color: rgba(205, 145, 15,0);
         }
         .player {
-            bottom: 45%;
+            bottom: 32%;
+        }
+        .player__center {
+            width: 100%;
         }
         .song__center {
             display: none;

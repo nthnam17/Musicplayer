@@ -56,7 +56,7 @@ const search = $('.header__search-result')
 
      const PLAYER_STORAGE_KEY = 'CHILLER-KEY'
 
-const apiSongs = 'http://localhost:3000/newsing'
+const apiSongs = 'https://nthnam17musicplayer.herokuapp.com/newsing'
 
 getList(playList)
 

@@ -33,7 +33,7 @@ const spacesChill = $('#QNT')
 
     const PLAYER_STORAGE_KEY = 'CHILLER-KEY'
 
-const apiSongs = 'http://localhost:3000/QNT'
+const apiSongs = 'https://nthnam17musicplayer.herokuapp.com/QNT'
 
 getList(playList)
 
